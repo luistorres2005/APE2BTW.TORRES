@@ -1,118 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="yober torres">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="yober torres">
+    <title>Historia - Evolución de HTML</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/unnamed.png" width="30" height="30" alt="Logo" class="d-inline-block align-text-top">
+                    Evolución de HTML
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="miMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html5.html">HTML5</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativa.html">Comparativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
         
-        <title>Historia</title>
-    </head>
-    <body>
-        <!--Encabezadoo-->
-        <header>
-            <img src="img/unnamed.png" alt="Logo de Html5" width="150">
-            <span>Evolución de HTML</span>
+        <div class="text-center mb-5">
+            <h1 class="display-5 text-primary">Hitos en la historia del HTML</h1>
+            <p class="lead">
+                El desarrollo del HTML no fue lineal; estuvo marcado por guerras de navegadores y cambios de filosofía.
+            </p>
             
-            <!--Navegación del sitio-->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="html5.html">HTML5</a></li>
-                    <li><a href="comparativa.html">Comparativa</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <hr>
-
-        <main>
-            <article>
-                <header>
-                    <h1>Línea de tiempo: Hitos en la historia del HTML</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
                     <p>
-                        El desarrollo del HTML no fue lineal; estuvo marcado por guerras de
-                        navegadores y cambios de filosofía en la W3C. Desde los primeros 
-                        documentos estáticos hasta las aplicaciones web que usamos a diario, 
-                        HTML ha ido evolucionando para responder a nuevas necesidades: 
-                        más interacción, mejor diseño y mayor accesibilidad. Conocer esta 
-                        línea de tiempo permite entender por qué hoy trabajamos con HTML5 
-                        y qué problemas vino a resolver cada versión anterior.
+                        Desde los primeros documentos estáticos hasta las aplicaciones web que usamos a diario, 
+                        HTML ha ido evolucionando para responder a nuevas necesidades. 
+                        Conocer esta línea de tiempo permite entender por qué hoy trabajamos con HTML5.
                     </p>
-                    <img src="img/La-W3C-considera-terminada-la-especificacion-de-HTML5.webp" alt="W3C & HTML" width="160">
-                </header>                
+                    <img src="img/La-W3C-considera-terminada-la-especificacion-de-HTML5.webp" alt="W3C & HTML" class="img-fluid rounded shadow-sm my-3" width="300">
+                </div>
+            </div>
+            <hr>
+        </div>
 
-                <section>
-                    <h2>HTML 1.0 - 1993</h2>
-                    <ul>
-                        <li>Diseñado por Tim Berners-Lee.</li>
-                        <li>Era puramente estructural y muy limitado.</li>
-                        <li>Su objetivo era conectar documentos científicos mediante hipervínculos.</li>
-                        <li>No existían las imágenes integradas ni las tablas.</li>
-                        <li>Contaba con 18 etiquetas básicas aproximadamente.</li>
-                    </ul>
-                </section>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h5 mb-0">HTML 1.0 - 1993</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <ul>
+                            <li>Diseñado por Tim Berners-Lee.</li>
+                            <li>Era puramente estructural y muy limitado.</li>
+                            <li>Su objetivo era conectar documentos científicos mediante hipervínculos.</li>
+                            <li>No existían las imágenes integradas ni las tablas.</li>
+                            <li>Contaba con 18 etiquetas básicas aproximadamente.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <section>
-                    <h2>HTML 2.0 - 1995</h2>
-                    <ul>
-                        <li>Se formaliza el lenguaje bajo el IETF.</li>
-                        <li>Primer estándar ya oficial.</li>
-                        <li>Su gran aporte fue la introducción de los formularios.</li>
-                        <li>Permitió por primera vez la interacción usuario-servidor.</li>
-                    </ul>
-                </section>
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h5 mb-0">HTML 2.0 - 1995</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <ul>
+                            <li>Se formaliza el lenguaje bajo el IETF (Primer estándar oficial).</li>
+                            <li>Su gran aporte fue la introducción de los <strong>formularios</strong>.</li>
+                            <li>Permitió por primera vez la interacción usuario-servidor.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <section>
-                    <h2>HTML 3.2 - 1997</h2>
-                    <ul>
-                        <li>Se dio en plena expansión comercial de internet.</li>
-                        <li>Se introdujeron las tablas.</li>
-                        <li>Se añadieron atributos visuales.</li>
-                        <li>Todo esto se definía directamente en el HTML.</li>
-                        <li>Permitió diseños mas ricos, pero mezclaba estructura con presentación.</li>                       
-                    </ul>
-                </section>
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h5 mb-0">HTML 3.2 - 1997</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <ul>
+                            <li>Se dio en plena expansión comercial de internet.</li>
+                            <li>Se introdujeron las <strong>tablas</strong> y atributos visuales.</li>
+                            <li>Permitió diseños más ricos, pero mezclaba estructura con presentación.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <section>
-                    <h2>HTML 4.01 - 1999</h2>
-                    <ul>
-                        <li>La W3C recomendó separar la estructura del diseño.</li>
-                        <li>Se introdujeron versiones Strict.</li>
-                        <li>Se introdujeron versiones Transitional.</li>
-                        <li>Ayudó a los desarrolladores a limpiar su código.</li>
-                    </ul>
-                </section>
+                <div class="card mb-4 border-secondary">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h5 mb-0">HTML 4.01 - 1999</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <ul>
+                            <li>La W3C recomendó <strong>separar la estructura del diseño</strong>.</li>
+                            <li>Se introdujeron versiones Strict y Transitional.</li>
+                            <li>Ayudó a los desarrolladores a limpiar su código.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <section>
-                    <h2>XHTML - 2000</h2>
-                    <ul>
-                        <li>Un intento de reformular HTML como XML.</li>
-                        <li>Exigía una sintaxis estricta y perfecta.</li>
-                        <li>Minúsculas obligatorias y etiquetas bien cerradas.</li>
-                        <li>Muy educativo para aprender buenas prácticas.</li>
-                        <li>Resultó demasiado estricto para la web común.</li>
-                    </ul>
-                </section>                
+                <div class="card mb-4 border-info">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h5 mb-0">XHTML - 2000</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <ul>
+                            <li>Un intento de reformular HTML como XML (sintaxis estricta).</li>
+                            <li>Minúsculas obligatorias y etiquetas bien cerradas.</li>
+                            <li>Muy educativo, pero resultó demasiado estricto para la web común.</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <section>
-                    <h2>HTML5 - 2014</h2>
-                    <ul>
-                        <li>Desarrollado por el WHATWG y la W3C.</li>
-                        <li>Introduce etiquetas semánticas modernas.</li>
-                        <li>Soporte nativo para audio y video sin plugins.</li>
-                        <li>Incluye APIs para aplicaciones web completas.</li>
-                    </ul>
-                </section>
+                <div class="card mb-4 border-primary">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h5 mb-0">HTML5 - 2014 (Actualidad)</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Desarrollado por el WHATWG y la W3C.</li>
+                            <li>Introduce <strong>etiquetas semánticas</strong> modernas.</li>
+                            <li>Soporte nativo para audio y video sin plugins.</li>
+                            <li>Incluye APIs para aplicaciones web completas.</li>
+                        </ul>
+                    </div>
+                </div>
 
-            </article>                
-        </main>
+            </div>
+        </div>
 
-        <hr>
+    </main>
 
-        <footer>
-            <small>© 2025  Blog web académico sobre la historia del HTML - yltorres3.</small>
-        </footer>
-    </body>    
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2025 - Blog web académico sobre la historia del HTML - yltorres3.</small>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

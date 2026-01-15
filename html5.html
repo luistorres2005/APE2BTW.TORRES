@@ -1,172 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Author" content="yober torres">
-        
-        <title>HTML5</title>
-    </head>
-    <body>
-        <header>
-            <img src="img/unnamed.png" alt="logoHtml" width="150">
-            <span>Evolución de HTML</span>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="html5.html">HTML5</a></li>
-                    <li><a href="comparativa.html">Comparativa</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <hr>
-
-        <main>
-            <article>
-
-                <h1>HTML5 transformó el navegador</h1>
-                <header>
-                    <p>
-                        HTML5 transformó el navegador de un simple
-                        <strong>"visor de documentos"</strong> a una 
-                        <strong>"plataforma de aplicaciones"</strong>.
-                    </p>
-                    <img src="img/htmlimagen.webp" alt="Imagen html" width="100">
-                    <p>
-                        HTML5 introduce nuevas capacidades semánticas, 
-                        multimedia y de aplicación web.
-                    </p>
-                </header>
-                                
-                <section>
-
-
-                    <h2>Ventajas clave</h2>
-
-                    <section>
-                        <h3>1. Diseño semántico</h3>
-                        <p>
-                            Usa etiquetas significativas como <code>header</code>,
-                            <code>nav</code>, <code>article</code> 
-                            para mejor accesibilidad y estructura de la página.                          
-                        </p>
-                    </section>
-
-                    <section>
-                        <h3>2. Multimedia nativa</h3>
-                        <p>
-                            Incrusta audio y video directamente sin
-                            plugins, haciendo los medios universalmente
-                            accesibles desde distintos dispositivos.
-                        </p>                        
-                    </section>
-
-                    <section>
-                        <h3>3. Compatibilidad</h3>
-                        <p>
-                            Permite diseñar sitios web responsivos
-                            que se adaptan a cualquier tamaño
-                            de pantalla, desde móvil hasta escritorio.
-                        </p>                        
-                    </section>
-
-                    <section>
-                        <h3>4. Offline y almacenamiento</h3>
-                        <p>
-                            HTML5 permite crear aplicaciones web que funcionan
-                            sin conexión y almacenan datos localmente
-                            para una experiencia más rápida.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h3>5. Formularios y APIs mejorados</h3>
-                        <p>
-                            Crea formularios interactivos con nuevos
-                            tipos de input y accede al hardware del 
-                            dispositivo mediante diferentes APIs.
-                        </p>
-                    </section>
-
-                    <section>
-                        <h3>6. Gráficos y efectos 2D/3D</h3>
-                        <p>
-                            Proporciona una amplia gama de nuevas 
-                            características que se ocupan de los gráficos y 
-                            animaciones en la web.
-                        </p>
-                    </section>
-                </section>
-                
-                <!--Ejemplos de uso-->
-                <section>
-                    <h2>Ejemplos de uso</h2>
-
-
-                    <section>
-                        <h3>Plataformas de video en línea</h3>
-
-                        <ul>
-                            <li>
-                                Servicios como streaming de películas o clases virtuales usan
-                                <code>video</code> para reproducir contenido con controles personalizados, 
-                                subtítulos y múltiples calidades sin instalar complementos.
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h3>Aplicaciones de correo y ofimática en el navegador</h3>
-
-                        <ul>
-                            <li>
-                                Clientes de correo, editores de texto y hojas de
-                                cálculo funcionan directamente en la web, aprovechando 
-                                HTML5, CSS3 y JavaScript para ofrecer interfaces complejas 
-                                y autosalvado con Web Storage.
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h3>Juegos en el navegador</h3>
-                        <ul>
-                            <li>
-                                Muchos juegos 2D y 3D utilizan <code>canvas</code> 
-                                y APIs de HTML5 para dibujar gráficos, manejar audio 
-                                y capturar eventos del teclado o del mouse, sin necesidad 
-                                de instalar software adicional.
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h3>Sitios de noticias y blogs estructurados semánticamente</h3>
-
-                        <ul>
-                            <li>
-                                Periódicos digitales y blogs organizan sus contenidos con 
-                                <code>header, nav, article, section, aside y footer</code>, 
-                                lo que mejora la navegación, la accesibilidad y el 
-                                posicionamiento en buscadores.
-                            </li>
-                        </ul>
-                    </section>                
-                </section>
-
-            </article>
-
-        </main>
-
-        <hr>
-
-        <footer>
-            <small>© 2025  Blog web académico sobre la historia del HTML - yltorres3.</small>
-        </footer>    
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="yober torres">
+    <title>HTML5 - Evolución</title>
     
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/unnamed.png" width="30" height="30" alt="Logo" class="d-inline-block align-text-top">
+                    Evolución de HTML
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="miMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="html5.html">HTML5</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativa.html">Comparativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        
+        <div class="text-center mb-5">
+            <h1 class="display-5 text-primary">HTML5 transformó el navegador</h1>
+            <p class="lead">
+                De un simple <strong>"visor de documentos"</strong> a una 
+                <strong>"plataforma de aplicaciones"</strong>.
+            </p>
+            <img src="img/htmlimagen.webp" alt="Imagen html" class="img-fluid my-3" width="150">
+            <p>
+                HTML5 introduce nuevas capacidades semánticas, multimedia y de aplicación web.
+            </p>
+            <hr>
+        </div>
+
+        <h2 class="text-center mb-4">Ventajas clave</h2>
+        
+        <div class="row g-4"> <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">1. Diseño semántico</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Usa etiquetas significativas como <code>header</code>, <code>nav</code>, <code>article</code> 
+                            para mejor accesibilidad y estructura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">2. Multimedia nativa</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Incrusta audio y video directamente sin plugins, haciendo los medios universalmente accesibles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">3. Compatibilidad</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Permite diseñar sitios web responsivos que se adaptan a cualquier tamaño de pantalla (móvil a escritorio).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">4. Offline y almacenamiento</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Permite crear aplicaciones web que funcionan sin conexión y almacenan datos localmente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">5. Formularios y APIs</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Crea formularios interactivos y accede al hardware del dispositivo mediante diferentes APIs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 border-primary">
+                    <div class="card-header bg-primary text-white">6. Gráficos 2D/3D</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Proporciona una amplia gama de nuevas características para gráficos y animaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <div class="mt-5">
+            <h2 class="text-center mb-4">Ejemplos de uso</h2>
+            
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="card h-100 bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Plataformas de video</h5>
+                            <p class="card-text">
+                                Streaming de películas usando <code>video</code> para reproducir contenido sin instalar nada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Ofimática Web</h5>
+                            <p class="card-text">
+                                Editores de texto y hojas de cálculo que funcionan en la web con autosalvado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Juegos Web</h5>
+                            <p class="card-text">
+                                Juegos 2D y 3D utilizando <code>canvas</code> y APIs para teclado y mouse.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2025 Blog web académico sobre la historia del HTML - yltorres3.</small>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

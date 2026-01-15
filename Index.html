@@ -1,107 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="yober torres">        
-        <title>Evolución de HTML</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="yober torres">
+    <title>Evolución de HTML</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Solo un poco de CSS para que las imagenes del carrusel no se vean gigantes */
+        .carousel-item img {
+            height: 300px; /* Altura fija */
+            object-fit: cover; /* Para que la imagen no se estire feo */
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/unnamed.png" width="30" height="30" alt="Logo">
+                    Evolución de HTML
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="miMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html5.html">HTML5</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comparativa.html">Comparativa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <div id="sliderFotos" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sliderFotos" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#sliderFotos" data-bs-slide-to="1"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/1200x300/333/fff?text=Historia+del+HTML" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bienvenidos a mi Blog</h5>
+                        <p>Aprende sobre la historia de la web.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1200x300/0056b3/fff?text=HTML5+Moderno" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tecnología HTML5</h5>
+                        <p>Lo más nuevo en desarrollo web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#sliderFotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sliderFotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <main class="container my-5">
         
-    </head>
+        <div class="text-center mb-4">
+            <h1>Evolución de HTML</h1>
+            <p>De la estructura estática a la web semántica</p>
+            <hr>
+        </div>
 
-    <body>
-        
-        <header>
-            <img src="img/unnamed.png" alt="Logo de HTML5" width="150">
-            <span>Evolución de HTML</span>
+        <div class="row">
+            
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        ¿Qué encontrarás aquí?
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Presentación del lenguaje.</li>
+                            <li>Objetivos del recorrido.</li>
+                            <li>Recursos usados.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="html5.html">HTML5</a></li>
-                    <li><a href="comparativa.html">Comparativa</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div class="col-md-8">
+                
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">¿Qué veremos?</h3>
+                        <p class="card-text">
+                            La historia del lenguaje HTML (HyperText Markup Language).
+                            Comenzó en 1993 y ahora es fundamental para todo internet.
+                        </p>
+                        <img src="img/html_sig.png" alt="Logo HTML" class="img-fluid" width="100">
+                    </div>
+                </div>
 
-        <hr>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">¿Qué haremos?</h3>
+                        <p class="card-text">
+                            Analizaremos cómo el HTML ha madurado desde la versión 1.0 hasta HTML5.
+                            Veremos por qué ahora separamos el diseño de la estructura.
+                        </p>
+                    </div>
+                </div>
 
-        <!--Contenido principal-->
-        <main>
-            <article>
-                <header>
-                    <h1>Evolución de HTML: De la estructura estática a la web semántica</h1>
-                    <p>Un recorrido desde las primeras versiones de HTML hasta el actual HTML5.</p>
-                </header>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Recursos</h3>
+                        <p class="card-text">
+                            Haremos una comparativa entre etiquetas viejas y nuevas.
+                            Nos enfocaremos en multimedia y etiquetas semánticas.
+                        </p>
+                    </div>
+                </div>
 
-                <!--Primera parte del contenido-->
-                <section>
-                    <h2>¿Qué encontraras en este blog?</h2>
-                    <ul>
-                        <li>Una breve presentación del lenguaje HTML y su evolución.</li>
-                        <li>Los objetivos del recorrido que haremos por sus versiones.</li>
-                        <li>Una explicacion de los recursos que usaremos en el sitio.</li>
-                    </ul>                 
-                 
-                </section>
+            </div>
+        </div>
 
-                <!--1ra parte del articulo-->
-                <section>
-                    <h2>¿Qué veremos?</h2>
-                    <p>
-                        La historia del lenguaje HTML
-                        (HyperText Markup Language).
-                        Este tema aborda la fascinante transformación de un estándar que
-                        comenzó en 1993 como una herramienta rudimentaria para compartir
-                        documentos de física nuclear y que, tres décadas después, se ha
-                        convertido en el ecosistema fundamental sobre el que se construyen
-                        aplicaciones complejas, videojuegos y plataformas de streaming.                     
-                    </p>
-                    <img src="img/html_sig.png" alt="Html evolución" width="180"> 
-                    <p>Iniciales de HTML.</p>                   
-                </section>
+    </main>
 
-                <!--2da parte del articulo-->
-                <section>
-                    <h2>¿Qué haremos?</h2>
-                    <p>
-                        A lo largo de este recorrido, analizaremos cómo el HTML ha madurado
-                        a través de sus versiones clave, desde la simplicidad del HTML 1.0
-                        hasta la rigurosidad del XHTML y la revolución flexible del actual HTML5.                        
-                    </p>
-                    <p>
-                        No solo veremos fechas, sino por qué cambiaron las cosas: la necesidad de
-                        separar el diseño de la estructura y la demanda de una web más accesible.
-                    </p>
-                </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <small>&copy; 2025 - yltorres3 - Blog Académico</small>
+        </div>
+    </footer>
 
-                <!--3ra parte-->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-                <section>
-                    <h2>¿Qué recursos usaremos?</h2>
-                    <p>
-                        Para ilustrar este cambio técnico, se presentará una comparativa directa
-                        entre etiquetas obsoletas y modernas, demostrando cómo hemos abandonado
-                        prácticas antiguas (como el uso de tablas para maquetar o etiquetas de fuente)
-                        en favor de un código semántico y limpio. 
-                    </p>
-                    <p>
-                        Finalmente, nos enfocaremos en las
-                        capacidades de HTML5, que ofrece soporte nativo para multimedia y APIs
-                        avanzadas, definiendo así el estándar de la web moderna que utilizamos hoy en día.
-                    </p>
-                </section>
-
-            </article>
-        </main>
-        
-        <hr>
-
-        <!--Pie de página-->
-        <footer>
-            <small>© 2025  Blog web académico sobre la historia del HTML - yltorres3.</small>
-        </footer>
-
-    </body>
+</body>
 </html>
